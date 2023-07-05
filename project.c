@@ -51,35 +51,6 @@ void str_cat(char dest[], char source[]){
   }
   dest[i]=0;
 }
-//make strstr work with pointers and give back the pointer to the starting index
-//or a nULL pointer if it isnt a substr
-
-/*int str_str(char str[], char substr[]){
-  int i=0;
-  int j,flag;
-  int start_index;
-  while(str[i]!=0){
-    if(str[i]==substr[0]){
-      start_index =i;
-      j=flag=0;
-      while(substr[j]!=0){
-        if(str[i]!=substr[j]){
-          flag =1;
-          break;
-        }
-        i++;j++;
-      }
-      if(flag==0&&substr[j]==0)
-        return start_index;
-    }
-    i++;
-  }
-  return -1;
-}*/
-
-
-
-
 //***************************************************
 //filters:
 void threshold(unsigned char* image, int width, int height) {
